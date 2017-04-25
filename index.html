@@ -15,29 +15,85 @@ git push origin master -->
 
         <!-- NAVIGATION BAR !--> 
         <nav id ="navi-container">
-            <a href="#raplibs-section">RAPLIBS</a>
-            <a href="#howitsmade-section">HOW IT'S MADE</a>
-            <a href="#aboutme-section">ABOUT ME</a>
+            <a href="#raplibs-section" class="nav-link">RAPLIBS</a>
+            <a href="#howitsmade-section" class="nav-link">HOW IT'S MADE</a>
+            <a href="#aboutme-section" class="nav-link">ABOUT ME</a>
         </nav>
 
         <div id="fullpage">
+
             <!-- RAPLIBS !--> 
             <section class="section" id="raplibs-section">
-                <div class="section-title">RAPLIBS</div>
+                <div class="section-title" id="raplibs">RAPLIBS</div>
             </section>
 
             <!-- HOW ITS MADE !--> 
             <section class="section" id="howitsmade-section">
-                <div class="section-title">HOW IT'S MADE</div>
-                    <div class="text" id="howitsmade-text"></div>
+                <div class="section-title" id="howitsmade">HOW IT'S MADE</div>
+                    <div class="steps-container">
+
+                        <div id="steps-prev">
+                            <img class="stepbutton" src="assets/img/previous.png"/>
+                        </div>
+                        <div id="steps-next">
+                            <img class="stepbutton" src="assets/img/next.png"/>
+                        </div>
+                        <div id="steps">
+
+                            <div class="steps-item">
+                                <div class="steps-number">Step 1
+                                    <div class="steps-text"><span>
+                                    Download Audacity or any other audio software, the original song, and the instrumental of the song. Google "how to rip vocals from songs", or follow <a href="http://www.instructables.com/id/Remove-The-Vocals-From-A-Song/" class="sites">this website's tutorial</a> (and watch the YouTube video if it gets confusing).
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="steps-item">
+                                <div class="steps-number">Step 2
+                                    <div class="steps-text"><span>
+                                    Fail miserably at step 1. Find already-made acapellas online. Subreddits /r/songstems and /r/isolatedvocals worked really well for me. You can also check out other websites such as 
+                                    <a href="acapellaz.com/" class="sites">acapellaz.com</a>, 
+                                    <a href="http://www.acapellas4u.co.uk/" class="sites">acapellas4u</a>, 
+                                    <a href="http://www.datpiff.com/mixtapes-search.php?criteria=acapellas" class ="sites">DatPiff</a>, and/or <a href="https://soundcloud.com/tags/acapella" class="sites">SoundCloud</a>.
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="steps-item">
+                                <div class="steps-number">Step 3
+                                    <div class="steps-text"><span>
+                                    Open an acapella audio file in QuickTime player. Listen to the song to find the section that has your adlib. Trim (cmd+T) that section. Save it as "adlib-section". Open "adlib-section" in QuickTime Player and cmd+T trim to grab the adlib. As you trim the acapella into shorter clips, the wavelength of the acapella becomes longer so you can carefully pick out the adlib.
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="steps-item">
+                                <div class="steps-number">Step 4
+                                    <div class="steps-text"><span> Learn some HTML/CSS/JS, code your website, and badabing badaboom, you're done!!!
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
             </section>
 
             <!-- ABOUT ME !--> 
             <section class="section" id="aboutme-section">
-                <div class="section-title">ABOUT ME</div>
-                    <div class ="text" id ="aboutme-text"> 
-                        Allow me to reintroduce myself...my name is Hov. Just kidding, my name is Sally Tran and I'm  a 3rd year studying Cognitive Science at UC Berkeley. And as you can see, I'm also a big hip hop fan. I was inspired to create this website while lifting to my playlist, GET HYPED GET PUMPED. When I heard Travis Scott's adlib "IT'S LIT!" in Antidote, I thought it'd be cool to create a soundboard full of rap adlibs. And since I fart alot, here's my adlib!
-                        <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1227121836%3Aplaylist%3A6stpxCvQM6r1MSInzBlrCA" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                <div class="section-title" id="aboutme">ABOUT ME</div>
+                    <div class ="text" id ="aboutme-text"> <span>
+                        Allow me to reintroduce myself...my name is Hov. Just kidding, my name is Sally Tran and I'm a 3rd year studying Cognitive Science at UC Berkeley. And as you can see, I'm also a big Hip Hop fan. I was inspired to create this website while lifting to my playlist, GET HYPED GET PUMPED (embedded below, check it out!!). When I heard Travis Scott's <text id="itslit">"IT'S LIT!"</text> in Antidote, I thought it'd be cool to highlight the subtle joys of Hip Hop music. And click on my picture for my adlib ;)!
+                        </span>
+                        <div>
+                            <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1227121836%3Aplaylist%3A6stpxCvQM6r1MSInzBlrCA&theme=white" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
+                        </div>
+                        <div id ="self-container">
+                            <img id ="self" src="assets/img/self.jpg">
+                        </div>
                     </div>
             </section>
 

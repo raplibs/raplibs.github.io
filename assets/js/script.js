@@ -2,47 +2,11 @@ $(document).ready(function() {
 
   // smooth scrollin //
   $('a').click(function(){
-    $('body').removeClass("no-scroll");
     $('html, body').animate({
       scrollTop: $( $.attr(this, 'href')).offset().top
-    }, 300);
-    setTimeout(function() {
-        $("#sidebar-button").removeClass("button-active");
-        $(".sidebar-container").removeClass("sidebar-active");
-        $(".page-wrapper").removeClass("wrapper-active");
-      }, 300);
+    }, 500);
     return false
   });
-  // // QUESTION 6
-
-  // //Implement the showing and hiding of the sidebar when the user clicks on #sidebar-button here:
-  // $('#sidebar-button').click(function(){
-  //   if ($(".sidebar-container").hasClass("sidebar-active")) {
-  //     $('body').removeClass("no-scroll");
-  //     $("#sidebar-button").removeClass("button-active");
-  //     $(".sidebar-container").removeClass("sidebar-active");
-  //     $(".page-wrapper").removeClass("wrapper-active");
-  //   } else {
-  //     $("#sidebar-button").addClass("button-active");
-  //     $(".sidebar-container").addClass("sidebar-active");
-  //     $(".page-wrapper").addClass("wrapper-active");
-  //     setTimeout(function() {
-  //       $('body').addClass('no-scroll');
-  //     }, 300);
-  //   }
-  // });
-  // // QUESTION 7
-
-  // //Implement the hiding of the sidebar when the user clicks on the page wrapper here:
-  // $('.page-wrapper').click(function(){
-  //   if ( $(".sidebar-container").hasClass("sidebar-active") ) {
-  //     $('body').removeClass("no-scroll");
-  //     $("#sidebar-button").removeClass("button-active");
-  //     $(".sidebar-container").removeClass("sidebar-active");
-  //     $(".page-wrapper").removeClass("wrapper-active");
-  //   }
-  // });
-  // // QUESTION 8
 
   //Implement the "slide to left" when the user clicks on #carousel-next here
   $("#carousel-next").click(function(){
