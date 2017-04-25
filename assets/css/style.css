@@ -1,9 +1,184 @@
-.section-title {
-	font-family: "Bangers";
-	font-size: 36px;
+
+/******************* GENERAL *******************/
+
+body {
+	margin: 0;
 }
 
 a {
+	color: white;
+}
+
+/******************* SECTION *******************/
+
+.section {
+	width: 100%;
+	height: 768px;
+	position: relative;
+	padding-top: 70px;
+	padding-left: 30px;
+}
+
+.section-title {
+	font-family: "Bangers";
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+
+#raplibs.section-title{
+	color: black;
+}
+
+#howitsmade.section-title{
+	color: white;
+}
+
+#aboutme.section-title {
+	color: #D50000;
+}
+
+#raplibs-section {
+	background-color: #D50000;
+}
+
+#howitsmade-section {
+	background-color: #181818;
+}
+
+#about-section {
+	background-color: white;
+}
+
+/******************* NAVIGATION BAR *******************/
+
+#navi-container {
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    text-align: right;
+    padding-top: 5px;
+}
+.nav-link {
 	font-family: "Bangers";
 	font-size: 20px;
+	color: black;
+	padding: 10px 5px;
 }
+
+/******************* HOW ITS MADE *******************/
+.steps-container {
+
+}
+
+#steps {
+	height: 100%;
+	margin-left: 0px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
+}
+
+.steps-number {
+	font-family: "Bangers";
+	letter-spacing: 2px;
+	font-size: 24px;
+}
+.steps-item {
+	position: relative;
+	height: 100%;
+	float: left;
+}
+
+#steps-next {
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	right: 50px;
+	top: 50%;
+	margin-top: -20px;
+	cursor: pointer;
+    -webkit-transition: all 0.5s;
+}
+
+#steps-prev {
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	left: 50px;
+	top: 50%;
+	margin-top: -20px;
+	cursor: pointer;
+    -webkit-transition: all 0.5s;
+}
+.stepbutton {
+	width: 100%;
+	height: 100%;
+}
+
+.steps-text {
+	color: white;
+	font-family: "Roboto Mono", monospace;
+	font-size: 12px;
+}
+
+.sites {
+	font-family: "Roboto Mono", monospace;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/******************* ABOUT ME *******************/
+
+#aboutme-text {
+	color: #181818;
+	font-family: "Roboto Mono", monospace;
+	font-size: 14px;
+}
+
+#self-container {
+	width: 480px;
+	height: 360px;
+	overflow: hidden;
+}
+#self {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+#itslit {
+	color: #D50000;
+}
+/*@media (max-width: 480px) { 
+	#header {
+		float: none;
+		padding: 20px 0;
+	}
+	#navbar {
+		margin: 0;
+		padding: 0;
+	}
+	#navbar ul {
+		width: 100%;
+		float: none;
+	}
+	.navbar-items {
+		background: #efefef;
+		display: block;
+		margin: 0 0 10px 0;
+	}
+	.navbar-items a {
+		display: block;
+		padding: 10px;
+		text-align: center;
+	}
+	.content {
+		width: 100%;
+		padding-bottom: 20px 0;
+	}
+}*/
