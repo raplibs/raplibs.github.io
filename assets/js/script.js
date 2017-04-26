@@ -45,9 +45,6 @@ $(document).ready(function() {
   $('#offsetbwah').click(function(){
       $('#playsound').append('<embed id="embed_player" src="assets/audio/offsetbwah.mp3" autostart="true" hidden="true"></embed>');
   });
-  // $('#offsetwhoowhoowhoowhoowhoo').click(function(){
-  //     $('#playsound').append('<embed id="embed_player" src="assets/audio/offsetwhoowhoowhoowhoowhoo.mp3" autostart="true" hidden="true"></embed>');
-  // });
   $('#offsetwoofgrr').click(function(){
       $('#playsound').append('<embed id="embed_player" src="assets/audio/offsetwoofgrr.mp3" autostart="true" hidden="true"></embed>');
   });
@@ -80,6 +77,10 @@ $(document).ready(function() {
   });
   $('#self').click(function(){
       $('#playsound').append('<embed id="embed_player" src="assets/audio/myadlib.mp3" autostart="true" hidden="true"></embed>');
+  });
+
+  $('#itslittext').mouseenter(function(){
+      $('#playsound').append('<embed id="embed_player" src="assets/audio/travisitslit.mp3" autostart="true" hidden="true"></embed>');
   });
 
 });
