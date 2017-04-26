@@ -21,8 +21,6 @@ git push origin master -->
             <a href="#aboutme-section" class="nav-link">ABOUT ME</a>
         </nav>
 
-        <div id="fullpage">
-
             <!-- RAPLIBS !--> 
             <section class="section" id="raplibs-section">
                 <div class="section-title" id="raplibs">RAPLIBS</div>
@@ -80,19 +78,11 @@ git push origin master -->
             <section class="section" id="howitsmade-section">
                 <div class="section-title" id="howitsmade">HOW IT'S MADE</div>
                     <div class="steps-container">
-
-                        <div id="steps-prev">
-                            <img class="stepbutton" src="assets/img/previous.png"/>
-                        </div>
-                        <div id="steps-next">
-                            <img class="stepbutton" src="assets/img/next.png"/>
-                        </div>
-
                         <div id="steps">
                             <div class="steps-item">
                                 <div class="steps-number">Step 1
                                     <div class="steps-text"><span>
-                                    Download Audacity or any other audio software, the original song, and the instrumental of the song. Google "how to rip vocals from songs", or follow <a href="http://www.instructables.com/id/Remove-The-Vocals-From-A-Song/" class="sites">this website's tutorial</a> (and watch the YouTube video if it gets confusing).
+                                    Download Audacity or any other audio software, the original song, and the instrumental of the song. Google "how to rip vocals from songs", or follow <a href="http://www.instructables.com/id/Remove-The-Vocals-From-A-Song/" class="sites">this website's tutorial</a> (and watch the accompanying YouTube video if it gets confusing).
                                     </span>
                                     </div>
                                 </div>
@@ -103,7 +93,7 @@ git push origin master -->
                                     Fail miserably at step 1 and find already-made acapellas online. You can check out websites such as 
                                     <a href="acapellaz.com/" class="sites">acapellaz.com</a>, 
                                     <a href="http://www.acapellas4u.co.uk/" class="sites">acapellas4u</a>, 
-                                    <a href="http://www.datpiff.com/mixtapes-search.php?criteria=acapellas" class ="sites">DatPiff</a>, and/or <a href="https://soundcloud.com/tags/acapella" class="sites">SoundCloud</a>. I got most of mine from subreddits /r/songstems and /r/isolatedvocals because they had high quality Hip Hop acapellas (50% of the time though). However, they had little diversity and quantities of Hip Hop artists, hence most of the adlibs on here are Migos...(but also Migos is adlib-heavy anyway.)
+                                    <a href="http://www.datpiff.com/mixtapes-search.php?criteria=acapellas" class ="sites">DatPiff</a>, and/or <a href="https://soundcloud.com/tags/acapella" class="sites">SoundCloud</a>. I got most of mine from subreddits <a href="https://www.reddit.com/r/IsolatedVocals/">/r/SongStems</a> and <a href="https://www.reddit.com/r/IsolatedVocals/">s/r/IsolatedVocals</a> because they had high quality audio clips. However, they had little diversity and quantities of Hip Hop acapellas, hence most of the adlibs on here are Migos...(but Migos is adlib-heavy anyway.)
                                     </span>
                                     </div>
                                 </div>
@@ -112,7 +102,7 @@ git push origin master -->
                             <div class="steps-item">
                                 <div class="steps-number">Step 3
                                     <div class="steps-text"><span>
-                                    Open an acapella audio file in QuickTime player. Listen to the song to find the section that has your adlib. Trim (cmd+T) that section. Save it as "adlib-section". Open "adlib-section" in QuickTime Player and cmd+T trim to grab the adlib. As you trim the acapella into shorter clips, the wavelength of the acapella becomes longer so you can carefully pick out the adlib.
+                                    Open an acapella in QuickTime player. Find the section of the song and trim (cmd+T) it. Save it as "adlib-section". When you open "adlib-section" in QuickTime Player, you'll see the wavelength became longer. Keep trimming down to carefully pick out the adlib.
                                     </span>
                                     </div>
                                 </div>
@@ -126,28 +116,32 @@ git push origin master -->
                                 </div>
                             </div>
                         </div>
-
+                        <div id="steps-prev">
+                            <img class="stepbutton" src="assets/img/previous.png"/>
+                        </div>
+                        <div id="steps-next">
+                            <img class="stepbutton" src="assets/img/next.png"/>
+                        </div>
                     </div>
             </section>
 
             <!-- ABOUT ME !--> 
             <section class="section" id="aboutme-section">
                 <div class="section-title" id="aboutme">ABOUT ME</div>
-                    <div class ="about-container">
-                        <div class ="text" id ="aboutme-text"> <span>
-                            Allow me to reintroduce myself...my name is Hov. Just kidding, my name is Sally Tran and I'm a 3rd year studying Cognitive Science at UC Berkeley. And as you can see, I'm also a big Hip Hop fan. I was inspired to create this website while lifting to my playlist, GET HYPED GET PUMPED (embedded below, check it out!!). When I heard Travis Scott's <text id="itslit">"IT'S LIT!"</text> in Antidote, I thought it'd be cool to highlight the subtle joys of Hip Hop music. I hope you enjoyed this website! And click on my picture for my adlib ;)
-                            </span>
-                            <div>
-                            <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1227121836%3Aplaylist%3A6stpxCvQM6r1MSInzBlrCA&theme=white" align="center" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
+                    <div id="aboutme-container">
+                        <div class="aboutme" id="about-container"> 
+                            <div id="aboutme-text"><span>
+                                Allow me to reintroduce myself...my name is Hov. Just kidding, my name is Sally Tran and I'm a 3rd year studying Cognitive Science at UC Berkeley. And as you can see, I'm also a big Hip Hop fan. I was inspired to create this website while lifting to my playlist, GET HYPED GET PUMPED (embedded below, check it out!!). When I heard Travis Scott's <text id="itslit">"IT'S LIT!"</text> in Antidote, I thought it'd be cool to highlight the subtle joys of Hip Hop music. I hope you enjoyed this website! And click on my picture for my adlib ;)
+                            </span></div>
+                            <div class="aboutme" id="spotify">
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3A1227121836%3Aplaylist%3A6stpxCvQM6r1MSInzBlrCA&theme=white" align="center" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
                             </div>
                         </div>
-                        <div id ="self-container">
+                        <div class="aboutme" id ="self-container">
                             <img id ="self" src="assets/img/self.jpg">
                         </div>
                     </div>
             </section>
-
-        </div>
 
     </body>
 </html>
