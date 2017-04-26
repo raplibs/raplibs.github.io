@@ -1,5 +1,25 @@
 $(document).ready(function() {
 
+var top1 = $('#raplibs-section').offset().top;
+var top2 = $('#howitsmade-section').offset().top;
+var top3 = $('#aboutme-section').offset().top;
+
+$(document).scroll(function() {
+  if ($(document).scrollTop() >= top1 && $(document).scrollTop() < top2) {
+    $('#navi-container').css('background-color', 'white');
+    $('.nav-link').css('background-color', 'white');
+    $('.nav-link').css('color', '#D50000');
+  } else if ($(document).scrollTop() >= top2 && $(document).scrollTop() < top3) {
+    $('#navi-container').css('background-color', '#D50000');
+    $('.nav-link').css('background-color', '#D50000');
+    $('.nav-link').css('color', 'white');
+  } else if ($(document).scrollTop() >= top3) {
+    $('#navi-container').css('background-color', '#181818');
+    $('.nav-link').css('background-color', '#181818');
+    $('.nav-link').css('color', '#D50000');
+  }
+});
+
   // smooth scrollin //
   $('a').click(function(){
     $('html, body').animate({

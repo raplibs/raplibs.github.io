@@ -74,15 +74,15 @@ a:visited, a:link, a:hover, a:active {
     z-index: 99;
     background-color: white;
     text-align: right;
-    padding-top: 5px;
+    padding: 5px 0px;
 }
 .nav-link {
 	font-family: "Bangers";
 	font-size: 20px;
-	color: black;
-	padding: 0px 5px;
+	color: #D50000;
+	padding-right: 10px;
 	background-color: white;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 }
 
 /******************* RAPLIBS *******************/
