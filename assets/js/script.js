@@ -9,12 +9,34 @@ $(document).ready(function() {
   });
  
  // hover over rappers face animation
- $('.nav-item').hover(function() {
+ $('.rapper-img-container').hover(function() {
       $( this ).addClass("hover");
       }, function() {
         $( this ).removeClass("hover");
       }
   );
+
+ // steps 
+  $("#steps-next").click(function(){
+    var current = parseInt($('#steps').css('margin-left').replace("px",""));
+    if (current == -360) {
+      return false
+    }
+    else {
+      $('#steps').css('margin-left', current-900)
+    }
+  });
+
+  $("#steps-prev").click(function(){
+    var current = parseInt($('#steps').css('margin-left').replace("px",""));
+    if (current == 0) {
+      return false
+    }
+    else {
+      $('#steps').css('margin-left', current+900)
+    }
+  });
+
 
   // play audio clip on image click //
   $('#quavopew').click(function(){
