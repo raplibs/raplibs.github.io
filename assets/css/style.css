@@ -243,12 +243,12 @@ a:visited, a:link, a:hover, a:active {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	cursor: pointer
+	cursor: pointer;
 }
 
 #itslittext {
 	color: #D50000;
-
+	cursor: url('http://pix.iemoji.com/sams33/0686.png'), pointer;
 }
 
 #spotify {
